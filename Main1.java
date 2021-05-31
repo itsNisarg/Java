@@ -1,4 +1,11 @@
-import java.sql.SQLOutput;
+/*
+  @file Main1.java
+ * @author Nisarg Suthar(nisargsuthar0@gmail.com)
+ * @version 0.1
+ * @date 28/05/2021
+ * @brief using nextLine to read string with spaces and hasNextInt to check the type of input
+ * @copyright Copyright(C) 2021
+ */
 import java.util.Scanner;
 public class Main1 {
     public static void main(String[] args)
