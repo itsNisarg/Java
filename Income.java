@@ -10,20 +10,30 @@ class Person
 
     public double getTax()
     {
-        if(salary>1000000)
+        int temp=salary;
+        double it=0;
+        if(temp>1000000)
         {
-            return salary*0.3;
+            temp-=1000000;
+            it = 112500.0;
+            it += temp*0.3;
         }
-        else if (salary>500000)
+        else if (temp>500000)
         {
-            return salary*0.2;
+            temp-=500000;
+            it = 12500.0;
+            it += temp*0.2;
         }
-        else if (salary>250000)
+        else if (temp>250000)
         {
-            return salary*0.05;
+            temp-=250000;
+            it += temp*0.05;
         }
         else
-            return 0;
+        {
+            it=0;
+        }
+            return it;
     }
 }
 public class Income {
